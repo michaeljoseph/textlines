@@ -24,3 +24,4 @@ def main():
     debug = arguments['--debug']
     logging.basicConfig(level=logging.DEBUG if debug else logging.INFO)
     log.debug('arguments: %s', arguments)
+    print(textlines.text_lines(open(arguments['<source>']).read()))
