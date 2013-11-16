@@ -54,7 +54,7 @@ Tests can then be run with:
 
 Lint the project with:
 
-    flake8 changes tests
+    flake8 textlines tests
 
 ## API documentation
 
