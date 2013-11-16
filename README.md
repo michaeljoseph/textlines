@@ -5,12 +5,14 @@
 [![# of downloads](https://pypip.in/d/textlines/badge.png)](https://crate.io/packages/textlines?version=latest)
 [![code coverage](https://coveralls.io/repos/michaeljoseph/textlines/badge.png?branch=master)](https://coveralls.io/r/michaeljoseph/textlines?branch=master)
 
-## Overview
 
-Python Library Boilerplate contains all the boilerplate you need to create a Python package.
 
-* features
-* and stuff 
+## Features
+
+Sparklines for text. text_lines counts your words, paragraphs, pages
+and emits a short summary.
+
+
 
 ## Usage
 

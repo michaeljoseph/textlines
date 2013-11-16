@@ -7,10 +7,7 @@ Usage:
   textlines -h | --help
 
 Options:
-  --kw-arg=<kw>         Keyword option description.
-  -b --boolean          Boolean option description.
   --debug               Debug.
-
   -h --help             Show this screen.
 """
 
