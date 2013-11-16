@@ -3,9 +3,6 @@ Sparklines for text. text_lines counts your words, paragraphs, pages
 and emits a short summary.
 
 The text doesn't need to be here, but I'm trying to write a new paragraph.
-
-4000 @ 130wpm = 30.8 minutes
-100 pages = 45000 words
 """
 __author__ = 'Michael Joseph'
 __email__ = 'michaeljoseph@gmail.com'
