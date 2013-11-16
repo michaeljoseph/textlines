@@ -5,18 +5,38 @@
 [![# of downloads](https://pypip.in/d/textlines/badge.png)](https://crate.io/packages/textlines?version=latest)
 [![code coverage](https://coveralls.io/repos/michaeljoseph/textlines/badge.png?branch=master)](https://coveralls.io/r/michaeljoseph/textlines?branch=master)
 
-## Overview
+## Features
 
-Python Library Boilerplate contains all the boilerplate you need to create a Python package.
+Sparklines for text. text_lines counts your words, paragraphs, pages
+and emits a short summary.
 
-* features
-* and stuff 
+957 :abc: 61 :page_with_curl: 9.57 % of a :notebook: 1.59 % of a :books: 7m441s :speech_balloon:
 
 ## Usage
 
 Install `textlines`:
 
     pip install textlines
+
+Run the cli:
+
+```
+textlines.
+
+Usage:
+  textlines [options] <source>
+
+  textlines -h | --help
+
+Options:
+  --debug               Debug.
+  -h --help             Show this screen.
+```
+
+```python
+$ textlines ../a-brief-history-of-the-word/talk/abstract.md 
+957 :abc: 61 :page_with_curl: 9.57 % of a :notebook: 1.59 % of a :books: 7m441s :speech_balloon:
+```
 
 ## Documentation
 
@@ -34,7 +54,7 @@ Tests can then be run with:
 
 Lint the project with:
 
-    flake8 changes tests
+    flake8 textlines tests
 
 ## API documentation
 

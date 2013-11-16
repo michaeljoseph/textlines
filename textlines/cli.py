@@ -2,16 +2,12 @@
 textlines.
 
 Usage:
-  textlines [options] command <param> <another_params>
-  textlines [options] another-command <param>
+  textlines [options] <source>
 
   textlines -h | --help
 
 Options:
-  --kw-arg=<kw>         Keyword option description.
-  -b --boolean          Boolean option description.
   --debug               Debug.
-
   -h --help             Show this screen.
 """
 
@@ -28,3 +24,4 @@ def main():
     debug = arguments['--debug']
     logging.basicConfig(level=logging.DEBUG if debug else logging.INFO)
     log.debug('arguments: %s', arguments)
+    print(textlines.text_lines(open(arguments['<source>']).read()))
