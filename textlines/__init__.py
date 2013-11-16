@@ -12,7 +12,8 @@ __version__ = '0.0.1'
 SHORT_STORY = 10000
 NOVEL = 60000
 PAGE = 450
-WPM = 130
+WPM = 100
+RPM = 300
 
 EMOJI = {
     'word': ':abc:',
@@ -20,14 +21,25 @@ EMOJI = {
     'page': ':page_facing_up:',
     'short_story': ':notebook:',
     'novel': ':books:',
-    'talking_time': ':speech_balloon:'
+    'talking_time': ':speech_balloon:',
+    'reading_time': ':eyes::book:',
 }
 
 
+def human_duration(minutes):
+    return '%dm%ds' % (minutes, minutes * 60)
+
+
+def reading_time(num_words):
+    return human_duration(
+        (num_words * 1.0) / RPM
+    )
+
+
 def talking_time(num_words):
-    minutes = (num_words * 1.0) / WPM
-    seconds = minutes * 60
-    return '%dm%ds' % (minutes, seconds)
+    return human_duration(
+        (num_words * 1.0) / WPM
+    )
 
 
 def work_percentage(words, length):
@@ -50,7 +62,8 @@ def text_lines(words):
             work_percentage(words, NOVEL),
             EMOJI['novel'],
         ),
-        '%s %s' % (talking_time(len(words)), EMOJI['talking_time'])
+        '%s %s' % (talking_time(len(words)), EMOJI['talking_time']),
+        '%s %s' % (reading_time(len(words)), EMOJI['reading_time']),
     ]
 
     return ' '.join(output)

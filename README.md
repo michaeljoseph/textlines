@@ -7,10 +7,10 @@
 
 ## Features
 
-Sparklines for text. text_lines counts your words, paragraphs, pages
-and emits a short summary.
+Emoji sparklines for text.
+`textlines` counts your words, paragraphs, pages and emits a short, emoji summary.
 
-957 :abc: 61 :page_with_curl: 9.57 % of a :notebook: 1.59 % of a :books: 7m441s :speech_balloon:
+1338 :abc: 61 :page_with_curl: 13.38 % of a :notebook: 2.23 % of a :books: 13m802s :speech_balloon: 4m267s :eyes::book:
 
 ## Usage
 
@@ -34,8 +34,8 @@ Options:
 ```
 
 ```python
-$ textlines ../a-brief-history-of-the-word/talk/abstract.md 
-957 :abc: 61 :page_with_curl: 9.57 % of a :notebook: 1.59 % of a :books: 7m441s :speech_balloon:
+$ textlines a-brief-history-of-the-word/talk/abstract.md 
+1338 :abc: 61 :page_with_curl: 13.38 % of a :notebook: 2.23 % of a :books: 13m802s :speech_balloon: 4m267s :eyes::book:
 ```
 
 ## Documentation
