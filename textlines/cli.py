@@ -2,8 +2,7 @@
 textlines.
 
 Usage:
-  textlines [options] command <param> <another_params>
-  textlines [options] another-command <param>
+  textlines [options] <source>
 
   textlines -h | --help
 
