@@ -15,17 +15,13 @@ setup(
     packages=['textlines'],
     include_package_data=True,
     install_requires=[
-    
         'docopt < 1.0.0'
-    
     ],
-    
     entry_points={
         'console_scripts': [
             'textlines = textlines.cli:main',
         ],
     },
-    
     test_suite='nose.collector',
     license=open('LICENSE').read(),
 )
