@@ -10,7 +10,7 @@
 Emoji sparklines for text.
 `textlines` counts your words, paragraphs, pages and emits a short, emoji summary.
 
-1338 :abc: 61 :page_with_curl: 13.38 % of a :notebook: 2.23 % of a :books: 13m802s :speech_balloon: 4m267s :eyes::book:
+2135 :abc: 158 :page_with_curl: 21.35% of a :notebook: 3.56% of a :books: 21 minutes :speech_balloon: 7 minutes :eyes::book:
 
 ## Usage
 
@@ -35,7 +35,7 @@ Options:
 
 ```python
 $ textlines a-brief-history-of-the-word/talk/abstract.md 
-1338 :abc: 61 :page_with_curl: 13.38 % of a :notebook: 2.23 % of a :books: 13m802s :speech_balloon: 4m267s :eyes::book:
+2135 :abc: 158 :page_with_curl: 21.35% of a :notebook: 3.56% of a :books: 21 minutes :speech_balloon: 7 minutes :eyes::book:
 ```
 
 ## Documentation
