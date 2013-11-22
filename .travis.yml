@@ -10,3 +10,4 @@ script:
     - flake8 setup.py textlines tests
 after_success:
   - coveralls
+  - cd docs && PYTHONPATH=.. make singlehtml
